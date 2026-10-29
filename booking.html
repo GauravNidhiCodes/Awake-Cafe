@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact AWAKE Cafe or submit a table booking request.">
+    <title>Contact & Booking | AWAKE Cafe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a href="index.html" class="logo">AWAKE<span>.</span></a>
+        <nav id="navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="booking.html" class="active" aria-current="page">Book a Table</a>
+        </nav>
+        <div class="header-actions">
+            <button id="theme-toggle" class="theme-toggle" type="button">Dark Mode</button>
+            <button id="menu-toggle" class="menu-toggle" type="button"
+                aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-heading container">
+            <p class="eyebrow">LET'S MAKE IT A DATE</p>
+            <h1>Your table is <span>waiting.</span></h1>
+            <p>Planning a coffee date, catching up with friends or simply taking a break? We'd love to have you.</p>
+        </section>
+
+        <section class="booking-section container">
+            <div class="booking-intro">
+                <p class="eyebrow">RESERVATIONS</p>
+                <h2>Save yourself a seat.</h2>
+                <p>Fill in the details to try our sample booking form.</p>
+
+                <div class="contact-details">
+                    <article class="contact-item">
+                        <h3>Visit Us</h3>
+                        <p>AWAKE Cafe, Pune, Maharashtra, India</p>
+                    </article>
+                    <article class="contact-item">
+                        <h3>Opening Hours</h3>
+                        <p>Monday – Sunday</p>
+                        <p>9:00 AM – 10:00 PM</p>
+                    </article>
+                    <article class="contact-item">
+                        <h3>Questions?</h3>
+                        <p>Use the form to share your message or special requests.</p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="booking-form-container">
+                <h2>Booking Request</h2>
+                <p class="form-description">Fields marked with * are required.</p>
+
+                <form id="booking-form">
+                    <div class="form-group">
+                        <label for="full-name">Full Name *</label>
+                        <input type="text" id="full-name" name="full-name"
+                            placeholder="Enter your full name" minlength="2" maxlength="60"
+                            autocomplete="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email"
+                            placeholder="you@example.com" autocomplete="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone"
+                            placeholder="10-digit mobile number" pattern="[0-9]{10}"
+                            maxlength="10" inputmode="numeric" autocomplete="tel"
+                            title="Enter a 10-digit mobile number without spaces." required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="booking-date">Booking Date *</label>
+                            <input type="date" id="booking-date" name="booking-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-time">Booking Time *</label>
+                            <input type="time" id="booking-time" name="booking-time"
+                                min="09:00" max="22:00" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guests">Number of Guests *</label>
+                        <input type="number" id="guests" name="guests"
+                            min="1" max="12" value="2" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="occasion">Occasion</label>
+                        <select id="occasion" name="occasion">
+                            <option value="regular">Just a coffee break</option>
+                            <option value="date">Coffee date</option>
+                            <option value="birthday">Birthday</option>
+                            <option value="friends">Friends meetup</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Special Requests</label>
+                        <textarea id="message" name="message" rows="4" maxlength="500"
+                            placeholder="Any preferences or special requests?"></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="contact-consent"
+                            name="contact-consent" required>
+                        <label for="contact-consent">
+                            I agree to be contacted regarding this booking request. *
+                        </label>
+                    </div>
+
+                    <button type="submit" class="button form-submit">Send Booking Request</button>
+                    <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+        <section class="map-section container">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">FIND YOUR WAY</p>
+                    <h2>Find us in Pune.</h2>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps?q=Pune%2C%20Maharashtra%2C%20India&output=embed"
+                    title="Map showing Pune, Maharashtra"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <p class="media-note">The map shows Pune generally, not a verified cafe address.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a href="index.html" class="logo">AWAKE<span>.</span></a>
+        <p>Good coffee, good company.</p>
+        <div class="footer-links">
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="booking.html">Contact & Booking</a>
+        </div>
+        <p class="copyright">&copy; 2026 AWAKE Cafe. All rights reserved.</p>
+    </footer>
+</body>
+</html>

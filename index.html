@@ -4,188 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the coffee, drinks and food menu at AWAKE Cafe.">
-    <title>Our Menu | AWAKE Cafe</title>
+    <meta name="description" content="Discover AWAKE Cafe — freshly brewed coffee, delicious food and a place to slow down.">
+    <title>AWAKE Cafe | A Little Coffee, A Better Day</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-
-    <header>
-        <a href="index.html" class="logo" aria-label="AWAKE Cafe Home">
-            AWAKE<span>.</span>
-        </a>
+    <header class="site-header">
+        <a href="index.html" class="logo">AWAKE<span>.</span></a>
 
         <nav id="navigation" aria-label="Main navigation">
-            <a href="index.html">Home</a>
-            <a href="menu.html" class="active" aria-current="page">Menu</a>
+            <a href="index.html" class="active" aria-current="page">Home</a>
+            <a href="menu.html">Menu</a>
             <a href="gallery.html">Gallery</a>
             <a href="booking.html">Book a Table</a>
         </nav>
 
         <div class="header-actions">
-            <button id="theme-toggle" type="button">Dark Mode</button>
-            <button id="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <button id="theme-toggle" class="theme-toggle" type="button">Dark Mode</button>
+            <button id="menu-toggle" class="menu-toggle" type="button"
+                aria-label="Toggle navigation" aria-expanded="false">☰</button>
         </div>
     </header>
 
     <main>
-        <section class="page-heading">
-            <p class="eyebrow">FRESHLY PREPARED, ALWAYS</p>
-            <h1>Our Menu</h1>
-            <p>Find your favourite cup and something delicious to go with it.</p>
-        </section>
-
-        <section class="menu-section">
-            <div class="section-heading">
-                <div>
-                    <p class="eyebrow">SOMETHING TO SIP</p>
-                    <h2>Coffee & Drinks</h2>
+        <section class="hero container">
+            <div class="hero-content">
+                <p class="eyebrow">YOUR EVERYDAY COFFEE SPOT</p>
+                <h1>A little coffee.<br>A better day.</h1>
+                <p class="hero-description">
+                    Should I kill myself, or have a cup of coffee?
+                </p>
+                <div class="hero-actions">
+                    <a href="menu.html" class="button">Explore Menu</a>
+                    <a href="booking.html" class="text-link">Book a Table →</a>
                 </div>
             </div>
 
-            <div class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th scope="col">Item</th>
-                            <th scope="col">Description</th>
-                            <th scope="col">Price</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td colspan="3" class="table-heading">Coffee</td>
-                        </tr>
-                        <tr>
-                            <td>Espresso</td>
-                            <td>A short, rich shot of coffee.</td>
-                            <td>₹120</td>
-                        </tr>
-                        <tr>
-                            <td>Americano</td>
-                            <td>Espresso topped with hot water.</td>
-                            <td>₹140</td>
-                        </tr>
-                        <tr>
-                            <td>Cappuccino</td>
-                            <td>Espresso, steamed milk and foam.</td>
-                            <td>₹170</td>
-                        </tr>
-                        <tr>
-                            <td>Cafe Latte</td>
-                            <td>Smooth espresso with steamed milk.</td>
-                            <td>₹180</td>
-                        </tr>
-                        <tr>
-                            <td>Mocha</td>
-                            <td>Chocolate, espresso and steamed milk.</td>
-                            <td>₹200</td>
-                        </tr>
-                        <tr>
-                            <td>Iced Latte</td>
-                            <td>Chilled milk, espresso and ice.</td>
-                            <td>₹180</td>
-                        </tr>
-                        <tr>
-                            <td colspan="3" class="table-heading">Other Drinks</td>
-                        </tr>
-                        <tr>
-                            <td>Hot Chocolate</td>
-                            <td>Warm chocolate milk with a rich taste.</td>
-                            <td>₹170</td>
-                        </tr>
-                        <tr>
-                            <td>Masala Chai</td>
-                            <td>Indian tea brewed with aromatic spices.</td>
-                            <td>₹100</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="hero-image-wrap">
+                <img class="hero-image" src="IMAGES/_ (13).jpeg"
+                    alt="Coffee beside a newspaper and earphones">
             </div>
         </section>
 
-        <section class="menu-section">
+        <section class="about-section container">
+            <p class="eyebrow">A PLACE TO PAUSE</p>
+            <h2>Your little coffee break.</h2>
+            <p>
+                AWAKE is a cafe made for slow mornings, meaningful conversations
+                and freshly brewed coffee. Come in, take a seat and make yourself at home.
+            </p>
+        </section>
+
+        <section class="section container">
             <div class="section-heading">
                 <div>
-                    <p class="eyebrow">A BITE TO REMEMBER</p>
-                    <h2>Food & Bakery</h2>
+                    <p class="eyebrow">MADE WITH CARE</p>
+                    <h2>Our Favourites</h2>
                 </div>
+                <a href="menu.html" class="text-link">View Full Menu →</a>
             </div>
 
-            <div class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th scope="col">Item</th>
-                            <th scope="col">Description</th>
-                            <th scope="col">Price</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td colspan="3" class="table-heading">Bakery</td>
-                        </tr>
-                        <tr>
-                            <td>Butter Croissant</td>
-                            <td>Flaky pastry with a buttery centre.</td>
-                            <td>₹130</td>
-                        </tr>
-                        <tr>
-                            <td>Chocolate Brownie</td>
-                            <td>Rich chocolate brownie, soft and fudgy.</td>
-                            <td>₹150</td>
-                        </tr>
-                        <tr>
-                            <td>Blueberry Muffin</td>
-                            <td>Soft muffin with sweet blueberries.</td>
-                            <td>₹140</td>
-                        </tr>
-                        <tr>
-                            <td colspan="3" class="table-heading">Light Bites</td>
-                        </tr>
-                        <tr>
-                            <td>Grilled Sandwich</td>
-                            <td>Grilled bread with a savoury filling.</td>
-                            <td>₹190</td>
-                        </tr>
-                        <tr>
-                            <td>Garlic Bread</td>
-                            <td>Toasted bread with garlic butter.</td>
-                            <td>₹160</td>
-                        </tr>
-                        <tr>
-                            <td>French Fries</td>
-                            <td>Crispy golden potato fries.</td>
-                            <td>₹150</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <div class="food-grid">
+                <article class="food-card">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80"
+                        alt="Iced latte" loading="lazy">
+                    <div class="food-card-content">
+                        <h3>Iced Latte</h3>
+                        <p>Espresso, chilled milk and ice.</p>
+                        <span class="food-price">₹180</span>
+                    </div>
+                </article>
 
-            <p class="menu-note">All prices are in Indian Rupees (₹). Menu items and prices are for this college project.</p>
+                <article class="food-card">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80"
+                        alt="Freshly brewed coffee" loading="lazy">
+                    <div class="food-card-content">
+                        <h3>Americano</h3>
+                        <p>Bold, rich and freshly brewed.</p>
+                        <span class="food-price">₹140</span>
+                    </div>
+                </article>
+
+                <article class="food-card">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80"
+                        alt="Fresh bakery treats" loading="lazy">
+                    <div class="food-card-content">
+                        <h3>Fresh Bakery</h3>
+                        <p>A delicious companion to your coffee.</p>
+                        <span class="food-price">From ₹120</span>
+                    </div>
+                </article>
+            </div>
         </section>
 
-        <section class="visit">
-            <p class="eyebrow">MADE FOR YOUR NEXT BREAK</p>
-            <h2>Found your favourite?</h2>
-            <p>Save yourself a seat and enjoy a little time at AWAKE.</p>
+        <section class="visit-banner container">
+            <p class="eyebrow">YOUR TABLE IS WAITING</p>
+            <h2>Good coffee. Good company.</h2>
+            <p>Make some time for yourself today.</p>
             <a href="booking.html" class="button">Book a Table</a>
         </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <a href="index.html" class="logo">AWAKE<span>.</span></a>
         <p>Good coffee, good company.</p>
-
         <div class="footer-links">
             <a href="menu.html">Menu</a>
             <a href="gallery.html">Gallery</a>
             <a href="booking.html">Contact & Booking</a>
         </div>
-
         <p class="copyright">&copy; 2026 AWAKE Cafe. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
